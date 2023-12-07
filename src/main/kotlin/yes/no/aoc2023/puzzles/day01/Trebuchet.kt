@@ -27,7 +27,7 @@ class Trebuchet(file: String, fileReader: FileReader) : PuzzleBase(file, fileRea
         return current
     }
 
-    fun extractNumber(input: String): Int? {
+    fun extractNumber(input: String): Int {
         val index = input.indexOfFirst { c -> c.isDigit() }
         val lastIndex = input.indexOfLast { c -> c.isDigit() }
 
@@ -38,7 +38,7 @@ class Trebuchet(file: String, fileReader: FileReader) : PuzzleBase(file, fileRea
     }
 
     override fun solvePart1(): String {
-        return data.sumOf { line -> extractNumber(line) ?: 0 }.toString()
+        return data.sumOf { line -> extractNumber(line) }.toString()
     }
 
     override fun solvePart2(): String {
