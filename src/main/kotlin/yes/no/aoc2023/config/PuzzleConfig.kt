@@ -6,9 +6,6 @@ import yes.no.aoc2023.puzzles.Puzzle
 import yes.no.aoc2023.puzzles.day01.Trebuchet
 import yes.no.aoc2023.puzzles.day02.CubeConundrum
 import yes.no.aoc2023.service.FileReader
-import java.nio.file.Files
-import java.nio.file.Paths
-import kotlin.reflect.full.createInstance
 
 @Configuration
 class PuzzleConfig {
