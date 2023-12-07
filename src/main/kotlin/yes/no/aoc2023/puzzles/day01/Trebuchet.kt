@@ -42,6 +42,6 @@ class Trebuchet(file: String, fileReader: FileReader) : PuzzleBase(file, fileRea
     }
 
     override fun solvePart2(): String {
-        return data.map(::convert).sumOf { line -> extractNumber(line) ?: 0 }.toString()
+        return data.map(::convert).sumOf { line -> extractNumber(line) }.toString()
     }
 }
